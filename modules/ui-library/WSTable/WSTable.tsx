@@ -22,7 +22,7 @@ const createHTMLAdapterComponent =
       tagName,
       {
         className: className
-          ? defaultClassName.concat(' ', className)
+          ? defaultClassName.concat(' ', className || '')
           : defaultClassName,
         ...rest,
       },

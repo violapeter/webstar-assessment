@@ -13,7 +13,7 @@ const WSSelect = ({
   className,
 }: React.PropsWithChildren<SelectProps>) => {
   return (
-    <div className={s.Select.concat(' ', className)}>
+    <div className={s.Select.concat(' ', className || '')}>
       {label && (
         <label htmlFor={id} className={s.Select__label}>
           {label}

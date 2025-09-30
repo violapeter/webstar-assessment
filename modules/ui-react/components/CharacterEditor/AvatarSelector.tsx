@@ -15,16 +15,18 @@ export const AvatarSelector = ({
   onSelected,
 }: AvatarSelectorProps) => {
   const getAvatar = useAvatar()
-  const ref = React.useRef(null)
+  const ref = React.useRef<HTMLDivElement>(null)
 
   React.useEffect(() => {
-    ref.current.addEventListener(
+    ref.current?.addEventListener(
       'wheel',
       (e) => {
-        const atStart = ref.current.scrollLeft === 0
+        if (!ref.current) return
+
+        const atStart = ref.current?.scrollLeft === 0
         const atEnd =
-          ref.current.scrollLeft + ref.current.clientWidth >=
-          ref.current.scrollWidth
+          ref.current?.scrollLeft + ref.current?.clientWidth >=
+          ref.current?.scrollWidth
 
         if (e.deltaY < 0 && atStart) return
         if (e.deltaY > 0 && atEnd) return
@@ -43,10 +45,9 @@ export const AvatarSelector = ({
           {AVATAR_IDS.map((id) => (
             <label
               key={id}
-              className={c(
-                'AvatarSelector__avatar',
-                selected === id && 'AvatarSelector__avatar--selected',
-              )}
+              className={c('AvatarSelector__avatar', {
+                'AvatarSelector__avatar--selected': selected === id,
+              })}
               style={{ backgroundImage: getAvatar(id) }}
               onClick={() => onSelected(id)}
             >

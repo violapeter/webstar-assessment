@@ -20,8 +20,8 @@ export const WSButton = ({
   return (
     <button
       className={c('Button', `Button--${variant}`, {
-        'Button--dark': dark,
-      }).concat(' ', className)}
+        'Button--dark': !!dark,
+      }).concat(' ', className || '')}
       {...rest}
     >
       {children}

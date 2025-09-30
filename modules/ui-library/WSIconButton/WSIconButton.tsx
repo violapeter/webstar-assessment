@@ -24,7 +24,7 @@ export const WSIconButton = ({
   return (
     <button
       aria-label={ariaLabel}
-      className={c('IconButton').concat(' ', className)}
+      className={c('IconButton').concat(' ', className || '')}
       {...rest}
     >
       <WSIcon name={icon} size={iconSize} color={iconColor} />

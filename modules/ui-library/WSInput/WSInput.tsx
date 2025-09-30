@@ -27,7 +27,7 @@ export const WSInput = ({
     <div
       className={c('Input', {
         'Input--centered': align === 'center',
-      }).concat(' ', className)}
+      }).concat(' ', className || '')}
     >
       {label && (
         <label htmlFor={id} className={s.Input__label}>
@@ -37,7 +37,7 @@ export const WSInput = ({
       <input
         id={id}
         className={c('Input__field', {
-          'Input__field--invalid': invalid,
+          'Input__field--invalid': !!invalid,
           'Input__field--dark': variant === 'dark',
         })}
         {...rest}

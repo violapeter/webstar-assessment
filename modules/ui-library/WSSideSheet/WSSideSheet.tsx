@@ -25,7 +25,7 @@ export const WSSideSheet = ({
     <div
       className={c('SideSheet', { 'SideSheet--open': open }).concat(
         ' ',
-        className,
+        className || '',
       )}
     >
       <div

@@ -16,7 +16,7 @@ export const WSTextarea = ({
   const c = classNames(s)
 
   return (
-    <div className={c('Textarea').concat(' ', className)}>
+    <div className={c('Textarea').concat(' ', className || '')}>
       {label && (
         <label htmlFor={id} className={s.Textarea__label}>
           {label}
