@@ -3,7 +3,8 @@
   "description": "My unnecessarily sophisticated solution to Webstar frontend assessment",
   "scripts": {
     "dev": "npm run dev -w modules/web",
-    "test": "npm run test --workspaces --if-present"
+    "test": "npm run test --workspaces --if-present",
+    "build": "npm run build --w modules/web"
   },
   "workspaces": [
     "features",
