@@ -1,24 +1,18 @@
 {
   "name": "webstar-assesment",
-  "version": "0.1.0",
-  "private": true,
+  "description": "My unnecessarily sophisticated solution to Webstar frontend assessment",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "biome check",
-    "format": "biome format --write"
+    "dev": "npm run dev -w modules/web",
+    "test": "npm run test --workspaces --if-present"
   },
-  "dependencies": {
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "next": "15.5.4"
-  },
-  "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "@biomejs/biome": "2.2.0"
+  "workspaces": [
+    "features",
+    "modules/*",
+    "development/*"
+  ],
+  "author": {
+    "name": "Peter Viola",
+    "email": "info@violapeter.hu",
+    "url": "https://violapeter.hu"
   }
 }

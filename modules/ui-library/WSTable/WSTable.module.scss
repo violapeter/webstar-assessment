@@ -1,0 +1,36 @@
+.Table {
+  color: var(--color-white);
+  width: 100%;
+  border-collapse: collapse;
+
+  &__body {
+    .Table__row {
+      &:hover {
+        .Table__cell {
+          background: rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+  }
+
+  &__header,
+  &__cell {
+    font-size: 16px;
+    padding: 10px;
+    text-align: left;
+  }
+
+  &__header {
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--color-yellow);
+  }
+
+  &__row {
+    &:not(:last-of-type) {
+      .Table__cell {
+        border-bottom: 1px solid var(--color-grey);
+      }
+    }
+  }
+}

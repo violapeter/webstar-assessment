@@ -1,0 +1,51 @@
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.Title {
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-weight: normal;
+
+  &__webstar {
+    font-family: var(--font-brand), sans-serif;
+    font-size: 30px;
+  }
+
+  &__frontend {
+    font-family: var(--font-brand-outlined), sans-serif;
+    font-size: 70px;
+    margin: 54px 0;
+  }
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+
+  &__fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 0;
+    flex: 1;
+    width: 100%;
+  }
+
+  &__label {
+    font-family: var(--font-default), sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--color-white);
+    text-align: center;
+    line-height: 32px;
+  }
+}

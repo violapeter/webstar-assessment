@@ -1,0 +1,29 @@
+%input-label {
+  font-weight: bold;
+}
+
+%input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+%input-field {
+  background: var(--color-white);
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px var(--color-grey);
+  height: 46px;
+  font-family: var(--font-default), sans-serif;
+  font-size: 16px;
+  color: var(--color-black);
+  padding: 0 8px;
+  display: flex;
+  flex: 46px;
+  width: 100%;
+
+  &:focus {
+    box-shadow: 0 0 0 2px var(--color-blue);
+    outline: 0;
+  }
+}

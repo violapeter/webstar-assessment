@@ -1,0 +1,40 @@
+.CharacterTable {
+  &__actions {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+  }
+
+  &__action {
+    font-family: var(--font-default), sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    padding: 8px 16px;
+    background: none;
+    color: var(--color-white);
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(80%);
+    }
+
+    &--remove {
+      color: var(--color-red);
+    }
+
+    &--modify {
+      color: var(--color-yellow);
+    }
+  }
+
+  &__row {
+    &:hover {
+      .CharacterTable__actions {
+        opacity: 1;
+      }
+    }
+  }
+}

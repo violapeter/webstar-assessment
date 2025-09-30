@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "es2021",
+    "module": "NodeNext",
+    "esModuleInterop": true,
+    "moduleResolution": "NodeNext",
+    "types": ["jest", "node"],
+    "lib": ["es2021"]
+  }
+}

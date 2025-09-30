@@ -1,0 +1,136 @@
+{
+  "characters": [
+    {
+      "id": "vader",
+      "name": "Darth Vader",
+      "side": "DARK",
+      "properties": {
+        "power": "Sötét erő, fénykard",
+        "midichlorian": 21000
+      },
+      "createdTimestamp": 1623456789000,
+      "description": "Anakin Skywalker sötét oldalra fordulása után lett Darth Vader, a Sith nagyúr. Lélegző maszkja és fekete páncélja ikonikus, ereje félelmetes."
+    },
+    {
+      "id": "luke",
+      "name": "Luke Skywalker",
+      "side": "LIGHT",
+      "properties": {
+        "power": "Erő, fénykard",
+        "midichlorian": 18500
+      },
+      "createdTimestamp": 1759250000000,
+      "description": "Vader fia, aki újjáépítette a Jedi rendet. Zöld fénykardja és erős erőkapcsolata legendássá tette őt a fényoldal harcosai között."
+    },
+    {
+      "id": "yoda",
+      "name": "Yoda",
+      "side": "LIGHT",
+      "properties": {
+        "power": "Erő mesteri szint, fénykard",
+        "midichlorian": 19000
+      },
+      "createdTimestamp": 1580000000000,
+      "description": "A legbölcsebb Jedi mester, 900 évig élt. Kis termetű, de hatalmas erővel rendelkezik. 'Tedd, vagy ne tedd, próbálkozás nincs.'"
+    },
+    {
+      "id": "kenobi",
+      "name": "Obi-Wan Kenobi",
+      "side": "LIGHT",
+      "properties": {
+        "power": "Erő, fénykard védekezés",
+        "midichlorian": 16500
+      },
+      "createdTimestamp": 1659123456000,
+      "description": "Anakin mestere, később Luke mentora. Kék fénykardja és védekezési technikája tökéletes. 'Ezek nem azok a droidok, akiket keresel.'"
+    },
+    {
+      "id": "anakin",
+      "name": "Anakin Skywalker",
+      "side": "LIGHT",
+      "properties": {
+        "power": "Erő, fénykard, pilóta képességek",
+        "midichlorian": 22000
+      },
+      "createdTimestamp": 1601234567000,
+      "description": "A Kiválasztott, aki egyensúlyt kellett volna hoznia az Erőbe. Rendkívüli ereje és pilótakészsége mellett végül sötét oldalra fordult."
+    },
+    {
+      "id": "rey",
+      "name": "Rey",
+      "side": "LIGHT",
+      "properties": {
+        "power": "Erő, fénykard, gyógyítás",
+        "midichlorian": 17500
+      },
+      "createdTimestamp": 1759260000000,
+      "description": "Palpatine unokája, aki elutasította a sötét oldalt. Sárga fénykardja és természetes erőkapcsolata új reményt hozott a galaxisba."
+    },
+    {
+      "id": "solo",
+      "name": "Han Solo",
+      "side": "LIGHT",
+      "properties": {
+        "power": "Pilóta képességek, lövészet",
+        "midichlorian": 1200
+      },
+      "createdTimestamp": 1640987654000,
+      "description": "A Millennium Falcon pilótája, csempész és a Lázadás hőse. 'Soha ne mondd, hogy esélytelen!' - híres mondása."
+    },
+    {
+      "id": "maul",
+      "name": "Darth Maul",
+      "side": "DARK",
+      "properties": {
+        "power": "Sötét erő, dupla fénykard",
+        "midichlorian": 16000
+      },
+      "createdTimestamp": 1570000000000,
+      "description": "Zabrak Sith tanítvány, vörös-fekete bőrű és szarvakkal. Dupla pengéjű piros fénykardja és harci képességei félelmetesek."
+    },
+    {
+      "id": "grievous",
+      "name": "General Grievous",
+      "side": "DARK",
+      "properties": {
+        "power": "Mechanikus test, 4 fénykard",
+        "midichlorian": 0
+      },
+      "createdTimestamp": 1698765432000,
+      "description": "Kaleesh cyborg tábornok, a droid hadsereg vezetője. Négy karjával egyszerre négy fénykardot tud forgatni. Köhögése jellemző."
+    },
+    {
+      "id": "phasma",
+      "name": "Captain Phasma",
+      "side": "DARK",
+      "properties": {
+        "power": "Taktikai vezetés, páncél",
+        "midichlorian": 800
+      },
+      "createdTimestamp": 1725123987000,
+      "description": "Az Első Rend ezüst páncélos kapitánya, a rohamosztagosok kiképzője. Krómozott páncélja tükröződik, személyisége könyörtelen."
+    },
+    {
+      "id": "stormtrooper",
+      "name": "Stormtrooper",
+      "side": "DARK",
+      "properties": {
+        "power": "Blaster, páncél",
+        "midichlorian": 500
+      },
+      "createdTimestamp": 1759257200000,
+      "description": "A Birodalom fehér páncélos katonái. Bár számszerűleg fölényben vannak, célzási képességük legendásan rossz."
+    },
+    {
+      "id": "boba",
+      "name": "Boba Fett",
+      "side": "DARK",
+      "properties": {
+        "power": "Vadász felszerelés, jetpack",
+        "midichlorian": 1000
+      },
+      "createdTimestamp": 1615432100000,
+      "description": "Jango Fett klónja és fia, a leghírhedtebb fejvadász a galaxisban. Zöld Mandalorian páncélja és jetpackje jellegzetes."
+    }
+  ]
+}

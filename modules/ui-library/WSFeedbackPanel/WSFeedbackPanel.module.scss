@@ -1,0 +1,17 @@
+.Feedback {
+  display: flex;
+  align-items: center;
+  color: var(--color-white);
+  background: var(--color-red);
+  border-radius: 8px;
+  gap: 8px;
+  padding: 0 16px;
+
+  &__icon {
+    font-size: 32px;
+    margin: 0 8px 0 0;
+  }
+  &__content {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,20 @@
+@use "../common/input.scss";
+
+.Textarea {
+  width: 100%;
+
+  &__label {
+    @extend %input-label;
+
+    display: flex;
+    margin-bottom: 8px;
+  }
+
+  &__field {
+    @extend %input-field;
+
+    height: 180px;
+    padding: 8px;
+    resize: vertical;
+  }
+}

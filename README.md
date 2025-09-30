@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# WebStar Assessment - Star Wars Character Management System
 
-## Getting Started
+An unnecessarily sophisticated solution to the Webstar frontend assessment, featuring a modular, enterprise-grade architecture for managing Star Wars characters.
 
-First, run the development server:
+## 🚀 Project Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+This project demonstrates advanced React/TypeScript patterns including Clean Architecture, MVP (Model-View-Presenter) pattern, and monorepo structure. Built as a comprehensive character management system set in the Star Wars universe.
+
+## 🏗️ Architecture
+
+The project follows a **modular monorepo architecture** with a clear separation of concerns:
+
+```
+webstar-assessment/
+├── modules/           # Reusable packages
+├── features/          # Business logic & domain features
+├── development/       # Development tooling
+└── README.md          # This file
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Core Principles
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Clean Architecture**: Clear separation between domain, presentation, and infrastructure layers
+- **MVP Pattern**: Model-View-Presenter for predictable state management
+- **Domain-Driven Design**: Features organized by business domain
+- **Type Safety**: Comprehensive TypeScript coverage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Module Structure
 
-## Learn More
+```
+├── features/                   # Business domain features
+│   ├── LoginForm/              # Authentication feature
+│   ├── User/                   # User profile management
+│   ├── CharacterChooser/       # Character selection
+│   ├── CharacterEditor/        # Character CRUD operations
+│   └── Gateways/               # External service integration
+├── modules/
+│   ├── cornerstone/           # Core MVP framework
+│   ├── cornerstone-react/     # React integration
+│   ├── types/                 # Shared TypeScript definitions
+│   ├── api-client/            # WebStar API client
+│   ├── ui-library/            # Design system components
+│   ├── ui-react/              # Business-specific components
+│   ├── classnames/            # CSS utility
+│   └── web/                   # Next.js application
+└── development/
+    └── prettier-config/       # Code formatting configuration
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Business Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Feature | Purpose | Components |
+|---------|---------|------------|
+| **LoginForm** | User authentication | Repository, Presenter, validation logic |
+| **User** | User profile management | User state, logout functionality |
+| **CharacterChooser** | Character selection interface | Navigation, character display |
+| **CharacterEditor** | Character CRUD operations | Create, edit, duplicate, delete characters |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠️ Technology Stack
 
-## Deploy on Vercel
+- **Frontend**: React 18, Next.js 14, TypeScript
+- **Styling**: SCSS Modules, CSS-in-JS
+- **State Management**: Custom MVP pattern with Observables
+- **Testing**: Jest, React Testing Library
+- **Build Tools**: Next.js, TypeScript compiler
+- **Package Management**: npm workspaces
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Getting Started
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Prerequisites
+
+- Node.js 18+
+- npm 8+
+
+### Installation
+
+```bash
+# Install dependencies for all workspaces
+npm install
+
+# Start development server
+npm run dev
+```
+
+The application will be available at [http://localhost:3000](http://localhost:3000).
+
+### Available Scripts
+
+```bash
+# Development
+npm run dev          # Start Next.js development server
+
+# Testing
+npm test             # Run all tests across workspaces
+npm test -w features # Run tests for specific workspace
+```
+
+## 📝 License
+
+This project is created as part of a technical assessment.
+
+## 👨‍💻 Author
+
+**Peter Viola**
+- Email: info@violapeter.hu
+- Website: https://violapeter.hu
+
+---
+
+*"Do or do not, there is no try." - Master Yoda*

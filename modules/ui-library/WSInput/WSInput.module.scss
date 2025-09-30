@@ -1,0 +1,37 @@
+@use "../common/input.scss";
+
+.Input {
+  @extend %input-wrapper;
+
+  &__label {
+    @extend %input-label;
+  }
+
+  &__field {
+    @extend %input-field;
+
+    &--invalid {
+      box-shadow: 0 0 0 2px var(--color-red);
+    }
+
+    &--dark {
+      box-shadow: none;
+      font-weight: 600;
+    }
+  }
+
+  &__error {
+    color: var(--color-red);
+    font-size: 12px;
+  }
+
+  &--centered {
+    .Input__field {
+      text-align: center;
+    }
+
+    .Input__error {
+      text-align: center;
+    }
+  }
+}

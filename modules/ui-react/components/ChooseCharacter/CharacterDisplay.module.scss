@@ -1,0 +1,79 @@
+.Character {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  flex: 1;
+}
+
+.Properties {
+  display: flex;
+  gap: 72px;
+  padding: 18px 0;
+}
+
+.PropertyIcon {
+  &--power {
+    background: var(--color-yellow);
+  }
+  &--sideDark, &--sideLight {
+    &::after {
+      content: '';
+      display: flex;
+      width: 34px;
+      height: 34px;
+    }
+  }
+  &--sideDark {
+    background: var(--color-white);
+
+    &::after {
+      background: var(--color-black);
+    }
+  }
+  &--sideLight {
+    background: var(--color-black);
+
+    &::after {
+      background: var(--color-white);
+    }
+  }
+}
+
+.Property {
+  display: flex;
+  gap: 20px;
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+  }
+  &__label {
+    color: var(--color-yellow);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  &__value {
+    color: var(--color-white);
+    font-size: 20px;
+    font-weight: 900;
+  }
+}
+
+.Name {
+  color: var(--color-white);
+  font-family: var(--font-brand), sans-serif;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 96px;
+}
+
+.Description {
+  color: var(--color-white);
+  font-family: var(--font-default), sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  padding: 30px 0;
+}

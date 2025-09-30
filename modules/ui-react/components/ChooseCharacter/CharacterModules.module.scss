@@ -1,0 +1,30 @@
+.Title {
+  color: var(--color-white);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.Module {
+  display: flex;
+
+  &__title {
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: 500;
+    width: 154px;
+  }
+
+  &__description {
+    color: var(--color-white);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 16px;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 20px;
+  }
+}
